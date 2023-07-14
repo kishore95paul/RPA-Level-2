@@ -23,7 +23,7 @@ Order robots from RobotSpareBin Industries Inc
     Download the Orders file
     Open the robot order website
     Fill the Form using Excel Data
-    Zip the Folder
+    [Teardown]    Zip the Folder
 
 
 *** Keywords ***
@@ -58,7 +58,7 @@ Fill the Order Details
     Mute Run On Failure    Save and Convert
     # It will try the Keyword untill it succeeds no of times & in intervals
     Wait Until Keyword Succeeds
-    ...    5x
+    ...    10x
     ...    1s
     ...    Save and Convert
     ...    ${order}[0]
